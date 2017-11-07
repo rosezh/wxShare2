@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<title>网信物流</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<style>
+a{text-decoration:none;color:#fff}
+.section { background: url(images/bg.jpg) 50%;background-size:cover;background-position:center top;font-family:"Microsoft Yahei"; color: #fff;position:relative}
+.section1{background:url(images/bg1.jpg) 50%;background-size:cover;background-position:center top;}
+.section6{background:url(images/bg6.jpg) 50%;background-size:cover;background-position:center top;}
+.section8{background:url(images/bg8.jpg) 50%;background-size:cover;background-position:center top;}
+.section1 .logo{width:31.6%;position:absolute;left:34%;}
+.section1 .logoOn{animation:logo 1s;transform:translateY(-200%)}
+@keyframes logo{
+	0%{transform:translateY(-500%)}
+	100%{transform:translateY(-200%)}	
+}
+.arrow{position:absolute;left:46%;bottom:5%;animation:arrow 2s infinite ease-in-out;width:8%}
+@keyframes arrow{
+	0%{bottom:5%}
+	50%{bottom:3%}
+	100%{bottom:5%}	
+}
+.bottom{width:100%;position:absolute;left:0;bottom:0}
+.title{font-size:20px;position:absolute;left:9%;top:0%;animation:title 1s;opacity:0;font-family:Arial}
+.title span{font-size:28px;font-weight:600}
+/*@keyframes title{
+	0%{top:-10%}
+	100%{top:5%}	
+}*/
+.txt{width:82%;position:absolute;left:9%;top:30%;animation:txt 1s 1s;opacity:0;line-height:30px;font-size:16px}
+@keyframes txt{
+	/*0%{top:30%;opacity:0}
+	100%{top:20%;opacity:1}	*/
+}
+.underline{width:9.3%;height:4px;background:#fff;left:9%;top:22%;position:absolute;opacity:0}
+.section3 .img1{position:absolute;width:34.9%;top:22%;left:12%;opacity:0}
+.section3 .img1On{animation:img1 1s 1s forwards;transform-origin:50% 50%;}
+@keyframes img1{
+	0%{transform:scale(0);opacity:0}
+	100%{transform:scale(1);opacity:1}	
+}
+.section3 .img2{position:absolute;width:30.67%;top:32.46%;left:51.47%; opacity:0}
+.section3 .img2On{animation:img2 1s 2s forwards;transform-origin:50% 50%;}
+@keyframes img2{
+	0%{transform:scale(0); opacity:0}
+	100%{transform:scale(1);opacity:1}	
+}
+.section3 .img3{position:absolute;width:29.33%;top:44.98%;left:15.87%;opacity:0}
+.section3 .img3On{animation:img3 1s 3s forwards;transform-origin:50% 50%;}
+@keyframes img3{
+	0%{transform:scale(0);opacity:0}
+	100%{transform:scale(1);opacity:1}	
+}
+.section3 .img4{position:absolute;width:33.47%;top:53.22%;left:46.8%;opacity:0}
+.section3 .img4On{animation:img4 1s 4s forwards;transform-origin:50% 50%;}
+@keyframes img4{
+	0%{transform:scale(0);opacity:0}
+	100%{transform:scale(1);opacity:1}	
+}
+.section3 .qiu{position:absolute;width:100%;top:29.835%;left:0%;animation:qiu 3s infinite}
+@keyframes qiu{
+	0%{opacity:1}
+	50%{opacity:0}
+	100%{opacity:1}	
+}
+.section3 .img5{position:absolute;width:100%;top:29.835%;left:0%;}
+.section4 .map{width:81.33%;position:absolute;left:9.335%;top:25%;opacity:0}
+.mapOn{animation:map 1s;}
+@keyframes map{
+	0%{transform:rotate(0deg)}	
+	100%{transform:rotate(360deg)}
+}
+
+.section5 .pic1{width:39.6%;position:absolute;left:-100%;top:20.46%;animation:pic1 1s}
+/*@keyframes pic1{
+	0%{left:-100%}	
+	100%{left:9%;}
+}*/
+.section5 .pic2{width:39.6%;position:absolute;right:-100%;top:20.46%}
+.section5 .pic3{width:82%;position:absolute;left:9%;top:52%;opacity:0}
+.section8{font-size:20px}
+.section8 .phone,.section8 .call{text-align:center;color:#fff}
+.section8 .call a{display:inline-block;padding:8px 30px;background:#18c5a6;border-radius:5px;color:#fff;}
+.section8 .call a img{width:16px;height:16px;margin-right:5px}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/prefixfree.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+</head>
+
+<body>
+
+<div id="dowebok">
+	<div class="section section1">
+    	<p><img class="logo" src="images/logo_03.png"></p>
+        <p><img class="arrow" src="images/arrow_03.png"></p>
+    </div>
+	<div class="section section2">
+    	<p class="title"><span>关于我们</span><br>About us</p>
+        <p class="underline"></p>
+        <p class="txt">广州网信物流有限公司，成立于2001年，是按照现代物流标准模式运行的物流公司。公司拥有多年操作经验，大小回程货车数千辆，态度热诚、经验丰富的员工数百人，专业从事公路运输，值得您的托付！</p>
+    	<p><img class="arrow" src="images/arrow_03.png"></p>
+    	<p><img class="bottom" src="images/bottom_02.png"></p>
+    </div>
+	<div class="section section3">
+    	<p class="title"><span>服务模式</span><br>Service mode</p>
+        <p class="underline"></p>
+        <p><img class="img1" src="images/img_03.png"></p>
+        <p><img class="img2" src="images/img_06.png"></p>
+        <p><img class="img3" src="images/img_10.png"></p>
+        <p><img class="img4" src="images/img_14.png"></p>
+        <p><img class="qiu" src="images/qiu_02.png"></p>
+        <p><img class="img5" src="images/1019_02.png"></p>
+    	<p><img class="arrow" src="images/arrow_03.png"></p>
+    	<p><img class="bottom" src="images/bottom_02.png"></p>
+    </div>
+	<div class="section section4">
+    	<p class="title"><span>全国专线网点</span><br>Service network</p>
+        <p class="underline"></p>
+        <p><img class="map" src="images/map_03.jpg"></p>
+        <p><img class="arrow" src="images/arrow_03.png"></p>
+    	<p><img class="bottom" src="images/bottom_02.png"></p>
+    </div>
+    <div class="section section5">
+    	<p class="title"><span>形象展示</span><br>Image display</p>
+        <p class="underline"></p>
+        <p><img class="pic1" src="images/pic_03.jpg"></p>
+        <p><img class="pic2" src="images/pic_06.jpg"></p>
+        <p><img class="pic3" src="images/pic_10.jpg"></p>
+        <p><img class="arrow" src="images/arrow_03.png"></p>
+    	<p><img class="bottom" src="images/bottom_02.png"></p>
+    </div>
+	<div class="section section6">
+    	<p class="title"><span>为什么选择我们</span><br>Our advantage</p>
+        <p class="underline"></p>
+        
+        <p><img class="arrow" src="images/arrow_03.png"></p>
+    	<p><img class="bottom" src="images/bottom_02.png"></p>        
+    </div>
+	<div class="section section7">
+    	<p class="title"><span>服务承诺</span><br>Service commitment</p>
+        <p class="underline"></p>
+        <p class="txt">在网信物流公司，无论新客户，还是老朋友是一根针，还是一座城，我们将一如既往，风雨无阻 ，日夜兼程竭尽全力地把您的货物在规定的时间内安全运达指定地点。</p>
+        <p><img class="arrow" src="images/arrow_03.png"></p>
+    	<p><img class="bottom" src="images/bottom_02.png"></p>
+    </div>
+	<div class="section section8">
+    	<p class="title"><span>选择网信物流</span><br>Welcome</p>
+        <p class="underline"></p>
+        <p class="phone"><br><br><br><br><br><br>全国热线：400-965-9156</p>
+        <p class="call"><a href="#"><img src="images/phone_03.jpg">马上联系</a></p>
+        <p class="phone">广州办：020-66623006</p>
+        <p class="call"><a href="#"><img src="images/phone_03.jpg">马上联系</a></p>
+        <p><img class="bottom" src="images/bottom_02.png"></p>
+    </div>
+</div>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		continuousVertical:false,
+		afterLoad: function(anchorLink, index){
+			if(index==1)
+			{
+				$('.section1').find('.logo').css('opacity','1');
+				$('.section1').find('.logo').addClass('logoOn');	
+				
+			}
+			if(index==2)
+			{
+				$('.section2').find('.title').delay(100).animate({
+					top:'4.49%',opacity:'1'	
+				},1000, 'easeOutExpo');
+				$('.section2').find('.underline').delay(600).animate({
+					top:'18%',opacity:'1'	
+				},1000, 'easeOutExpo');
+				$('.section2').find('.txt').delay(1000).animate({
+					top:'25%',opacity:'1'	
+				},1000, 'easeOutExpo');
+			}	
+			if(index==3)
+			{
+				$('.section3').find('.title').delay(100).animate({
+					top:'4.49%',opacity:'1'	
+				},1000, 'easeOutExpo');
+				$('.section3').find('.underline').delay(600).animate({
+					top:'18%',opacity:'1'	
+				},1000, 'easeOutExpo');
+				$('.section3').find('.img1').addClass('img1On');
+				$('.section3').find('.img2').addClass('img2On');
+				
+				$('.section3').find('.img3').addClass('img3On');
+				
+				$('.section3').find('.img4').addClass('img4On');
+				
+			}
+			if(index==4)
+			{
+				$('.section4').find('.title').delay(100).animate({
+					top:'4.49%',opacity:'1'	
+				},1000, 'easeOutExpo');
+				$('.section4').find('.underline').delay(600).animate({
+					top:'18%',opacity:'1'	
+				},1000, 'easeOutExpo');
+				$('.section4').find('.map').css('opacity','1');
+				$('.section4').find('.map').addClass('mapOn');
+			}
+			if(index==5)
+			{
+				
+				$('.section5').find('.title').delay(100).animate({
+					top:'4.49%',opacity:'1'	
+				},1000, 'easeOutExpo');
+				$('.section5').find('.underline').delay(600).animate({
+					top:'18%',opacity:'1'	
+				},1000, 'easeOutExpo');
+				$('.section5').find('.pic1').delay(1000).animate({
+					left:'9%',	
+				},1000, 'easeOutExpo');	
+				$('.section5').find('.pic2').delay(1000).animate({
+					right:'9%',	
+				},1000, 'easeOutExpo');
+				$('.section5').find('.pic3').delay(1000).animate({
+					top:'52%',	opacity:'1'
+				},1000, 'easeOutExpo');
+			}		
+			if(index==6)
+			{
+				$('.section6').find('.title').delay(100).animate({
+					top:'4.49%',opacity:'1'	
+				},1000, 'easeOutExpo');
+				$('.section6').find('.underline').delay(600).animate({
+					top:'18%',opacity:'1'	
+				},1000, 'easeOutExpo');
+			}
+			if(index==7)
+			{
+				$('.section7').find('.title').delay(100).animate({
+					top:'4.49%',opacity:'1'	
+				},1000, 'easeOutExpo');
+				$('.section7').find('.underline').delay(600).animate({
+					top:'18%',opacity:'1'	
+				},1000, 'easeOutExpo');
+				$('.section7').find('.txt').delay(1000).animate({
+					top:'25%',opacity:'1'	
+				},1000, 'easeOutExpo');
+			}
+			if(index==8)
+			{
+				$('.section8').find('.title').delay(100).animate({
+					top:'4.49%',opacity:'1'	
+				},1000, 'easeOutExpo');
+				$('.section8').find('.underline').delay(600).animate({
+					top:'18%',opacity:'1'	
+				},1000, 'easeOutExpo');
+			}
+		},
+		onLeave: function(index, direction){
+			if(index==1)
+			{
+				$('.section1').find('.logo').removeClass('logoOn');	
+				$('.section1').find('.logo').css('opacity','0');
+			}
+			if(index==2)
+			{
+				$('.section2').find('.title').delay(100).animate({
+					top:'0%',opacity:'0'	
+				},1000, 'easeOutExpo');
+				$('.section2').find('.underline').delay(600).animate({
+					top:'22%',opacity:'0'	
+				},1000, 'easeOutExpo');
+				$('.section2').find('.txt').delay(1000).animate({
+					top:'30%',opacity:'0'	
+				},1000, 'easeOutExpo');
+			}
+			if(index==3)
+			{	
+				$('.section3').find('.title').delay(100).animate({
+					top:'0%',opacity:'0'	
+				},1000, 'easeOutExpo');
+				$('.section3').find('.underline').delay(600).animate({
+					top:'22%',opacity:'0'	
+				},1000, 'easeOutExpo');
+				$('.section3').find('.img1').removeClass('img1On');
+				$('.section3').find('.img2').removeClass('img2On');
+				$('.section3').find('.img3').removeClass('img3On');
+				$('.section3').find('.img4').removeClass('img4On');	
+			}
+			if(index==4)
+			{
+				$('.section4').find('.title').delay(100).animate({
+					top:'0%',opacity:'0'	
+				},1000, 'easeOutExpo');
+				$('.section4').find('.underline').delay(600).animate({
+					top:'22%',opacity:'0'	
+				},1000, 'easeOutExpo');
+				
+				$('.section4').find('.map').css('opacity','0');
+				$('.section4').find('.map').removeClass('mapOn');
+			}
+			if(index==5)
+			{
+				$('.section5').find('.title').delay(100).animate({
+					top:'0%',opacity:'0'	
+				},1000, 'easeOutExpo');
+				$('.section5').find('.underline').delay(600).animate({
+					top:'22%',opacity:'0'	
+				},1000, 'easeOutExpo');
+				$('.section5').find('.pic1').delay(0).animate({
+					left:'-100%',	
+				},1000, 'easeOutExpo');	
+				$('.section5').find('.pic2').delay(0).animate({
+					right:'-100%',	
+				},1000, 'easeOutExpo');	
+				$('.section5').find('.pic3').delay(0).animate({
+					top:'70%',	opacity:'0'
+				},1000, 'easeOutExpo');
+			}
+			if(index==6)
+			{
+				$('.section6').find('.title').delay(100).animate({
+					top:'0%',opacity:'0'	
+				},1000, 'easeOutExpo');
+				$('.section6').find('.underline').delay(600).animate({
+					top:'22%',opacity:'0'	
+				},1000, 'easeOutExpo');
+				
+			}	
+			if(index==7)
+			{
+				$('.section7').find('.title').delay(100).animate({
+					top:'0%',opacity:'0'	
+				},1000, 'easeOutExpo');
+				$('.section7').find('.underline').delay(600).animate({
+					top:'22%',opacity:'0'	
+				},1000, 'easeOutExpo');
+				$('.section7').find('.txt').delay(1000).animate({
+					top:'30%',opacity:'0'	
+				},1000, 'easeOutExpo');
+				
+			}	
+			if(index==8)
+			{
+				$('.section8').find('.title').delay(100).animate({
+					top:'0%',opacity:'0'	
+				},1000, 'easeOutExpo');
+				$('.section8').find('.underline').delay(600).animate({
+					top:'22%',opacity:'0'	
+				},1000, 'easeOutExpo');
+				
+			}
+		}
+	});
+	$('.section1').find('.logo').addClass('logoOn');
+});
+</script>
+
+
+
+
+</body>
+</html>
